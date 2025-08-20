@@ -1,0 +1,24 @@
+let nome = ("Insira seu nome");
+let contato = ("Insira seu contato");
+let peso = ("Informe seu peso");
+let altura = ("Informe sua altura");
+
+let consumo = (peso * 0.035);
+
+console.log("Seu consumo deve ser " + consumo + " litros de água por dia.");
+
+let imc = peso / (altura * altura);
+
+if (imc < 18.5){
+console.log("Seu IMC corresponde a: " + imc + "Você está abaixo do normal.");
+} else if (imc <= 24.9){
+console.log("Seu IMC corresponde a: " + imc + "Você está normal.");
+} else if (imc <= 29.9){
+console.log("Seu IMC corresponde a: " + imc + "Você está com sobrepeso.");
+} else if (imc <= 39.9){
+console.log("Seu IMC corresponde a: " + imc + "Você está com obesidade.");
+} else {
+console.log("Seu IMC corresponde a: " + imc + "Você está com obesidade grave.");
+}
+
+
